@@ -26,7 +26,8 @@
           <img src="/static/images/call-us.jpg" alt="call-us" height="345px" />
         </div>
         <div class="col-md-6 mt-4 mb-4">
-          <form>
+          <form method="post">
+            {% csrf_token %}
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"
                 >Email address</label
@@ -36,6 +37,8 @@
                 class="form-control"
                 id="exampleFormControlInput1"
                 placeholder="name@example.com"
+                name="email"
+                required
               />
             </div>
             <div class="mb-3">
@@ -47,6 +50,8 @@
                 class="form-control"
                 id="exampleFormControlInput1"
                 placeholder="Enter your name"
+                name="name"
+                required
               />
             </div>
             <div class="mb-3">
@@ -58,14 +63,22 @@
                 id="exampleFormControlTextarea1"
                 rows="3"
                 placeholder="Type your message"
+                name="message"
+                required
               ></textarea>
             </div>
-            <input type="submit" class="btn btn-success" value="Submit" />
+            <input type="submit" class="btn btn-success" value="Submit"  name="submit" onclick="Save()"/>
+            
           </form>
+
         </div>
       </div>
     </div>
-
+<script> 
+function Save(){
+  alert("submitted successfully");
+}
+</script>
     <div class="container">
       <h4 class="text-center mb-4 mt-2">Locate Us</h4>
       <div class="row">
