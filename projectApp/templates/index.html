@@ -2,149 +2,143 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Company</title>
-    <link rel="shortcut icon" href="/static/images/favicon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="/static/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     {% include 'header.html' %}
 
     <!-- slidebar carosoul -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./static/images/banner.jpg" class="d-block w-100" alt="no img" height="600px">
+          <img
+            src="./static/images/banner.jpg"
+            class="d-block w-100"
+            alt="no img"
+            height="600px"
+          />
         </div>
         <div class="carousel-item">
-          <img src="./static/images/banner2.webp" class="d-block w-100" alt="no img" height="600px">
+          <img
+            src="./static/images/banner2.webp"
+            class="d-block w-100"
+            alt="no img"
+            height="600px"
+          />
         </div>
         <div class="carousel-item">
-          <img src="./static/images/banner3.jpg" class="d-block w-100" alt="no img" height="600px">
+          <img
+            src="./static/images/banner3.jpg"
+            class="d-block w-100"
+            alt="no img"
+            height="600px"
+          />
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
     <div class="container">
-      <h4 class="text-center mb-2 mt-2">Our Services </h4>
+      <h4 class="text-center mb-2 mt-2">Our Services</h4>
       <div class="row">
-<div class="col-md-4">
-  <div class="card" style="width: 18rem;">
-    <img src="./static/images/website-designing-service.png" class="card-img-top" alt="web" height="300px">
-    <div class="card-body">
-      <h5 class="card-title">Web Design</h5>
-      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-      <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</a>
-    </div>
-  </div>
-</div>
-<div class="col-md-4">
-  <div class="card" style="width: 18rem;">
-    <img src="./static/images/android-application-development-service.jpg" class="card-img-top" alt="app" height="300px" >
-    <div class="card-body">
-      <h5 class="card-title">Android App</h5>
-      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-      <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</a>
-    </div>
-  </div>
-</div>
-<div class="col-md-4">
-  <div class="card" style="width: 18rem;">
-    <img src="./static/images/ui-and-ux-design-services.png" class="card-img-top" alt="UI&UX" height="300px">
-    <div class="card-body">
-      <h5 class="card-title">UI-UX</h5>
-      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-      <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</a>
-    </div>
-  </div>
-</div>
-      </div>
-    </div>
-<div class="container">
-  <h4 class="text-center mb-2 mt-2"> Our Portfolio</h4>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img src="./static/images/dine.webp" class="card-img-top" alt="food" height="300px">
-        <div class="card-body">
-          <h5 class="card-title">Restraunt Site</h5>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-          <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">View More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img src="./static/images/Bank.png" class="card-img-top" alt="Bank" height="300px">
-        <div class="card-body">
-          <h5 class="card-title">Banking App</h5>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-          <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">View More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img src="./static/images/CMS.png" class="card-img-top" alt="cms" height="300px">
-        <div class="card-body">
-          <h5 class="card-title">CMS</h5>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-          <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">View More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-3 mb-3">
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img src="./static/images/Medical-app.png" class="card-img-top" alt="medical" height="300px">
-        <div class="card-body">
-          <h5 class="card-title">Medical App</h5>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-          <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">View More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img src="./static/images/ERP.jpg" class="card-img-top" alt="erp" height="300px">
-        <div class="card-body">
-          <h5 class="card-title">ERP</h5>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-          <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">View More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img src="./static/images/event.webp" class="card-img-top" alt="EMS" height="300px">
-        <div class="card-body">
-          <h5 class="card-title">Event Management Site</h5>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-          <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">View More</a>
-        </div>
-      </div>
-    </div>
-  </div>
+        {% for i in info %}
 
-</div>
-  
+        <div class="col-md-4 mt-2 mb-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="{{i.file.url}}"
+              class="card-img-top"
+              alt="web"
+              height="300px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{i.title}}</h5>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <a
+                href="#"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      </div>    
+    <div class="container">
+      <h4 class="text-center mb-2 mt-2">Our Portfolio</h4>
+      <div class="row">
+        {% for d in data %}
 
-      <footer class="bg-dark text-light">
-             {% include 'footer.html' %}
-      </footer>
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <div class="col-md-4 mt-2 mb-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="{{d.file.url}}"
+              class="card-img-top"
+              alt="web"
+              height="300px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{d.text}}</h5>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <a
+                href="#"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+       
+        
+      </div>
+    </div>
 
+    <footer class="bg-dark text-light">{% include 'footer.html' %}</footer>
 
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
